@@ -1,0 +1,63 @@
+.registerContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.registerContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registerForm label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.registerForm input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.passwordField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordField input {
+  flex: 1;
+}
+
+.passwordField span {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.registerForm button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registerForm button:hover {
+  background-color: #0056b3;
+}

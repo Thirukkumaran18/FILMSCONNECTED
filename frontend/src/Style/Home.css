@@ -1,0 +1,53 @@
+.searchForm{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.movieGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.searchForm form {
+  display: flex;
+  gap: 10px;
+}
+
+.searchForm input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.2s ease;
+}
+
+.searchForm input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.searchForm button {
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchForm button:hover {
+  background-color: #45a049;
+}

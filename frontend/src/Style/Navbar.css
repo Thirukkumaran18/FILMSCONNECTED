@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo .links {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  color: #e53935;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.links:hover {
+  color: #b71c1c;
+}
+
+/* Hide icons by default (desktop view) */
+.iconOnly {
+  display: none;
+}
+
+/* Show icons and hide full text in mobile */
+@media (max-width: 600px) {
+  .fullText {
+    display: none;
+  }
+
+  .iconOnly {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .logo .links {
+    font-size: 18px;
+  }
+
+  .navLinks {
+    gap: 12px;
+  }
+}
