@@ -1,17 +1,15 @@
 const commentModel  = require('../models/CommentsModel');
 
 const getAllComments = async(req, res) => {
-    try{
-
-        const {movieName} = req.params ; 
-        const allComments = await commentModel.find({movieName}).populate('userId', 'name'); ;
-
-        console.log("from db : ", allComments);
-        res.status(201).json(allComments);
-
-    }catch(e){
-        console.log("comment controler -> getallcomment -> ", e.message);
-    }
+    try {
+    const { movieName } = req.params;
+    const allComments = await commentModel.find({ movieName }).populate('userId', 'name');
+    console.log("from db:", allComments);
+    res.status(200).json(allComments);
+  } catch (e) {
+    console.log("comment controller -> getAllComments ->", e.message);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
 }
 
 const addComment = async(req, res) => {
