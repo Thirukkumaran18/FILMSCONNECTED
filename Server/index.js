@@ -17,7 +17,7 @@ app.use("/", require("./routes/RegisterRoutes"))
 app.use("/", require("./routes/RegisterRoutes"))
 app.use("/favourite", require("./routes/FavouritesRouter"));
 app.use("/", require("./routes/FavouritesRouter"))
-app.use("/comments", require("./routes/CommentRouter"))
+app.use("/comments/:movieName", require("./routes/CommentRouter"))
 
 
 const port = 5000;
